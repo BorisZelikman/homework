@@ -1,0 +1,13 @@
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let res = [];
+console.log(res);
+res.push(...numbers);
+console.log(res);
+res.splice(1, 2);
+console.log(res);
+res.splice(3, 1, 1);
+console.log(res);
+res.splice(-4, 4);
+console.log(res);
+res.splice(0, 0, 0);
+console.log(res);

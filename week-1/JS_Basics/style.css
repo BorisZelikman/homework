@@ -1,0 +1,8 @@
+div{
+    background-color: gray;
+}
+.leftSection{
+    width: 10;
+    background-color: brown;
+    display: inline-block;
+}

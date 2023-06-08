@@ -1,0 +1,68 @@
+.card {
+  border-radius: 20px;
+  background-color: antiquewhite;
+  display: inline-block;
+  width: 200px;
+  height: 300px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+.largeChar {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 180px;
+}
+.topChar {
+  position: absolute;
+  left: 10%;
+  top: 15px;
+  font-size: larger;
+}
+.bottomChar {
+  position: absolute;
+  right: 10%;
+  bottom: 15px;
+  font-size: larger;
+}
+.bottomLeft {
+  position: absolute;
+  left: 10%;
+  bottom: 15px;
+  font-size: larger;
+}
+.topRight {
+  position: absolute;
+  right: 10%;
+  top: 15px;
+  font-size: larger;
+}
+
+.icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  height: 70%;
+
+  background-image: url("img/carsIcons.png");
+  background-position: -24px -16px;
+  opacity: 20%;
+  background-size: 500%;
+  background-repeat: no-repeat;
+}
+#diamond {
+  background-position: -538px -16px;
+}
+.deck {
+  display: inline-block;
+  position: relative;
+}
+#card8 {
+  position: absolute;
+  left: 110px;
+  top: 110px;
+  transform: rotate(0.05turn);
+}

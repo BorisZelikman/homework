@@ -1,0 +1,156 @@
+.present {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  display: inline-block;
+  left: 50%;
+  transform: translate(-50%, 0);
+  position: relative;
+}
+
+.vertical {
+  background-color: red;
+  position: absolute;
+  left: 10%;
+  width: 10px;
+  height: 100%;
+  display: inline-block;
+}
+
+.horisontal {
+  background-color: red;
+  position: absolute;
+  top: 14%;
+  width: 100%;
+  height: 10px;
+  display: inline-block;
+}
+
+.roundedBackground {
+  width: 250px;
+  height: 130px;
+  background-color: hsl(240, 80%, 61%);
+  display: inline-block;
+  left: 50%;
+  transform: translate(-50%, 0);
+  position: relative;
+  border-radius: 8px / 4px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: smaller;
+  margin: 10px;
+  position: absolute;
+}
+p:nth-child(2) {
+  bottom: 0px;
+  right: 0px;
+}
+.bar {
+  width: 20px;
+  background-color: hsl(240, 23%, 82%);
+  display: inline-block;
+  position: absolute;
+  bottom: 5px;
+}
+.bar:nth-child(3) {
+  height: 20px;
+  left: 5px;
+}
+.bar:nth-child(4) {
+  height: 50px;
+  left: 35px;
+}
+.bar:nth-child(5) {
+  height: 80px;
+  left: 65px;
+}
+.bar:nth-child(6) {
+  height: 70px;
+  left: 95px;
+}
+.bar:nth-child(7) {
+  height: 55px;
+  left: 125px;
+}
+.bar:nth-child(8) {
+  height: 42px;
+  left: 155px;
+}
+
+.redPart {
+  background-color: red;
+  width: 250px;
+  height: 200px;
+  border-radius: 12px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin-bottom: 50px;
+}
+.silverPart {
+  background-color: silver;
+  display: inline-block;
+  width: 60px;
+  height: 40px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  position: absolute;
+  top: -10px;
+}
+.silverPart:first-child {
+  left: 0px;
+}
+.silverPart:last-child {
+  right: 0px;
+}
+.silverPart:nth-child(2) {
+  left: 60px;
+  width: 130px;
+  height: 150px;
+  background-color: white;
+  border-radius: 12px;
+}
+
+#chocolate {
+  background-color: black;
+  display: inline-block;
+  padding: 4px;
+  left: 50%;
+  transform: translate(-50%);
+  margin-bottom: 50px;
+  position: relative;
+}
+#middle {
+  background-color: darkred;
+  height: 5px;
+  width: 385px;
+  margin-top: 6px;
+  margin-bottom: 4px;
+}
+.block {
+  background-color: #66320e;
+  width: 90px;
+  height: 90px;
+  margin: 3px;
+}
+#block-1 {
+  float: right;
+}
+#block-2 {
+  float: right;
+}
+#block-3 {
+  float: right;
+}
+#block-5 {
+  float: left;
+}
+#block-6 {
+  float: left;
+}
+#block-7 {
+  float: left;
+}

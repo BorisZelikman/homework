@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Exercise 1
+      const isEven = function (number) {
+        return number % 2 == 0;
+      };
+      console.log(isEven(0));
+
+      // Exercise 2
+      const oddsFromArray = function (numbers) {
+        for (let num of numbers) {
+          if (!isEven(num)) console.log(num);
+        }
+      };
+      oddsFromArray([123, 548, 5, 4, 56, 54, 6, 32, 1]);
+
+      // Exercise 3
+      const isNumberInArray = function (array, number) {
+        for (let numberFromArray of array) {
+          if (number === numberFromArray) {
+            return true;
+          }
+        }
+        return false;
+      };
+      console.log(isNumberInArray([12, 654, 8, 2136, 21321], 8));
+
+      // Exercise 4
+      let calculator = {
+        add: function (number1, number2) {
+          return number1 + number2;
+        },
+        subtract: function (number1, number2) {
+          return number1 - number2;
+        },
+      };
+
+      const result1 = calculator.add(20, 1);
+      const result2 = calculator.subtract(30, 9);
+
+      console.log(calculator.add(result1, result2)); //should print 42
+
+      // Exercise 5 (Extra Practice)
+      const turnToKing = function (name, money) {
+        name = name.toUpperCase();
+        money = increaseByNameLength(money, name);
+        name = makeRegal(name);
+
+        console.log(name + " has " + money + " gold coins");
+      };
+
+      function increaseByNameLength(money, name) {
+        return money * name.length;
+      }
+
+      function makeRegal(name) {
+        return "His Royal Highness, " + name;
+      }
+
+      turnToKing("martin luther", 100); // should print "His Royal Highness, MARTIN LUTHER has 1300 gold coins"
+
+      // ===========================================================================
+      // Functions Mini Lesson - Optional
+      people_info = [
+        {
+          name: "guido",
+          profession: "bungalow builder",
+          age: 17,
+          country: "canaland",
+          city: "sydurn",
+          catchphrase: "what a piece of wood!",
+        },
+        {
+          name: "petra",
+          profession: "jet plane mechanic",
+          age: 31,
+          country: "greenmark",
+          city: "bostork",
+          catchphrase: "that's my engine, bub",
+        },
+        {
+          name: "damian",
+          profession: "nursery assistant",
+          age: 72,
+          country: "zimbia",
+          city: "bekyo",
+          catchphrase: "with great responsibility comes great power",
+        },
+      ];
+
+      const capitalize = function (str) {
+        return str[0].toUpperCase() + str.slice(1);
+      };
+
+      const getAge = function (age) {
+        return age < 21 ? "an underage" : age > 55 ? "55+" : `${age} years old`;
+      };
+      const getProfession = function (profession) {
+        let words = profession.split(" ");
+        res = "";
+        for (let word of words) {
+          res += ` ${capitalize(word)}`;
+        }
+        return res;
+      };
+      const getPlace = function (country, city) {
+        return `from ${capitalize(city)}, ${capitalize(country)}`;
+      };
+      const getPhrase = function (phrase) {
+        return `"${capitalize(phrase)}"`;
+      };
+
+      const getSummary = function (person) {
+        let summary = "";
+        summary += capitalize(person.name);
+        summary += ` is ${getAge(person.age)}`;
+        summary += getProfession(person.profession);
+        summary += ` ${getPlace(person.country, person.city)}.`;
+        summary += ` ${capitalize(person.name)} loves to say`;
+        summary += ` ${getPhrase(person.catchphrase)}.`;
+        return summary;
+      };
+
+      for (let person of people_info) {
+        console.log(getSummary(person));
+      }
+
+      // Exercise. Words in text counter
+      const story =
+        "In the beginning there was light. Then there were wolves.Finally there was a big fire. Ultimately, Shelob the wolf-master put out the fire with her feet. But until then,        the fire caused one heck of a lot of damage.";
+      const specialChars = [",", ".", "'", '"', "?", "!", ";"];
+      let wordCounts = {};
+
+      const deleteSpecialChars = function (text) {
+        for (let char of specialChars) {
+          text = text.split(char).join("");
+        }
+        return text;
+      };
+      const getWordsToCount = function (text) {
+        for (let word of text.toLowerCase().split(" ")) {
+          if (word.trim() != "") {
+            if (wordCounts.hasOwnProperty(word)) wordCounts[word]++;
+            else wordCounts[word] = 1;
+          }
+        }
+        console.log(wordCounts);
+      };
+      const countTextWords = function (text) {
+        let res = deleteSpecialChars(text);
+        res = getWordsToCount(deleteSpecialChars(text));
+      };
+      countTextWords(story);
+      console.table(wordCounts);
+    </script>
+  </body>
+</html>
