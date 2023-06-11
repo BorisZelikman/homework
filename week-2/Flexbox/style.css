@@ -12,38 +12,71 @@ div {
   align-items: center;
   justify-content: center;
   display: flex;
-  height: 20vh;
+  height: 120px;
 }
 .footer {
+  bottom: 0;
   background-color: deepskyblue;
   font-size: 40pt;
   font-family: Arial, Helvetica, sans-serif;
   align-items: center;
   justify-content: center;
   display: flex;
-  height: 20vh;
+  height: 120px;
+  width: calc(100vw - 10px);
+  position: absolute;
 }
+
 .menu {
   width: calc(100vw / 5);
-  display: inline-block;
-  background-color: blueviolet;
-  height: 55vh;
+  display: flex;
+  background-color: mediumpurple;
   margin: 0;
+  flex-direction: column;
 }
 .ad {
   width: calc(100vw / 5);
-  display: inline-block;
-  position: absolute;
-  height: 55vh;
+  display: flex;
   background-color: mediumslateblue;
   margin: 0;
-  right: 5px;
+  flex-direction: column;
 }
 .content {
   background-color: pink;
-  display: inline-block;
+  display: flex;
   margin: 0;
+  margin-left: 5px;
+  margin-right: 5px;
+  flex-direction: column;
 
-  height: 55vh;
   width: calc(3 * 100vw / 5 - 20px);
+}
+.content p:first-child {
+  font-size: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.content p:last-child {
+  font-size: 16px;
+}
+.middle {
+  display: flex;
+  height: calc(100vh - 260px);
+  min-height: 200px;
+}
+p {
+  display: block;
+  margin: 0%;
+  margin-left: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+}
+.menu p:first-child {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ad p {
+  font-size: 90px;
+  margin: 10;
 }
