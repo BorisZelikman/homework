@@ -1,4 +1,3 @@
-/*
 const splice = function (array, indexFrom, deleteCount, ...items) {
   if (deleteCount === undefined) deleteCount = array.length - indexFrom;
 
@@ -44,8 +43,8 @@ console.log(deleted); //should be [2]
 arr = [1, 2, 3];
 deleted = splice(arr, 1, 0, 5);
 console.log(deleted); //should be []
-*/
 
+/*
 // Overriding the native splice method
 Array.prototype.splice = function () {
   // Custom code here
@@ -89,3 +88,4 @@ console.log(deleted); //should be [2]
 arr = [1, 2, 3];
 deleted = arr.splice(1, 0, 5);
 console.log(deleted); //should be []
+*/
