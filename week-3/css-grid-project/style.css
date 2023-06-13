@@ -1,6 +1,7 @@
 body {
   margin: 0px;
 }
+
 .viewboxGrid {
   display: grid;
   grid-template-rows: 50px calc(100vh - 80px) 30px;
@@ -8,9 +9,7 @@ body {
 
 #nav-container {
   display: grid;
-  background-color: lightgrey;
-  padding-right: 15px;
-  padding-left: 15px;
+  background-color: #303952;
 }
 .main-items {
   display: grid;
@@ -21,24 +20,25 @@ body {
   padding: 5px;
 }
 .main-items {
-  display: grid;
   align-items: center;
+  color: white;
 }
 
 .content {
   display: grid;
-  grid-template-columns: 1fr 2fr fr;
-  grid-template-rows: 3fr 2fr;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
   grid-template-areas:
     "a t i"
     "a t c";
-  grid-gap: 10%;
-  background-color: wheat;
-  justify-content: center;
-  align-content: center;
+  grid-gap: 5%;
+  background-color: #b2bec3;
+  justify-content: space-around;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 .footer {
-  background-color: darkslategray;
+  background-color: #303952;
   display: grid;
   align-items: center;
   justify-items: right;
@@ -49,45 +49,72 @@ body {
 .abcdGrid {
   display: grid;
   grid-area: a;
-  background-color: lightskyblue;
-
   align-content: center;
 }
 .abcdGrid div {
-  display: grid;
-  border-width: 1px;
-  border-color: black;
-  height: 100px;
   font-size: 60px;
   border: 1px solid black;
   text-align: center;
-  background-color: darkseagreen;
+  background-color: #f3a683;
 }
 .threeColumnGrid {
   display: grid;
   grid-area: t;
   grid-template-columns: 1fr 1fr 1fr;
-  background-color: lightskyblue;
 }
 .threeColumnGrid div {
-  display: grid;
-  height: 350px;
+  padding: 5px;
+  height: 450px;
   border: 1px solid black;
   align-self: center;
-  background-color: darkseagreen;
+  background-color: #f7d794;
 }
 .info {
   display: grid;
   grid-area: i;
   border: 1px solid black;
-  background-color: darkseagreen;
-  height: 300px;
+  background-color: #ecf0f1;
   align-self: self-end;
+  padding: 5px;
 }
-.comment {
+.calc {
   display: grid;
   grid-area: c;
   border: 1px solid black;
-  background-color: darkseagreen;
-  height: 200px;
+  background-color: #2d3436;
+  height: 270px;
+  grid-template-columns: repeat(4, 40px);
+  grid-template-rows: repeat(6, 40px);
+  justify-content: center;
+  align-content: center;
+  width: 180px;
+  border-radius: 10px;
+  grid-gap: 5px;
+  padding: 10px;
+  box-shadow: 3px 3px 3px rgb(63, 59, 59);
+  transform: rotate(0.01turn);
+}
+.calc > button {
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  justify-content: center;
+}
+.span4 {
+  grid-column: span 4;
+  background-color: gray;
+  margin-bottom: 10px;
+  padding: 5px;
+  box-shadow: inset 1px 1px 2px rgb(63, 59, 59);
+  text-align: right;
+  font-size: larger;
+}
+.span2 {
+  grid-column: span 2;
+}
+
+#picture {
+  align-self: center;
+  width: 100%;
+  font-family: ;
 }
