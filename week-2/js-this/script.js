@@ -105,7 +105,7 @@ const narkis = {
 
 shoutIt(avi, revealSecret);
 shoutIt(narkis, revealSecret);
-
+*/
 
 // Exercise 6
 const coffeeShop = {
@@ -138,7 +138,7 @@ coffeeShop.makeDrink("doubleShot");
 coffeeShop.makeDrink("frenchPress"); //should alert/console "Sorry, we're all out of beans"
 
 
-
+/*
 // Exercise 6.1
 const coffeeShop1 = {
   beans: 40,
@@ -177,7 +177,7 @@ coffeeShop1.makeDrink("americano");
 coffeeShop1.makeDrink("filtered"); //should alert/console "Sorry, we don't make filtered"
 coffeeShop1.makeDrink("doubleShot");
 coffeeShop1.makeDrink("frenchPress"); //should alert/console "Sorry, we're all out of beans"
-*/
+
 // Exercise 6.2
 const coffeeShop2 = {
   beans: 40,
@@ -215,3 +215,4 @@ coffeeShop2.makeDrink("americano");
 coffeeShop2.makeDrink("filtered"); //should alert/console "Sorry, we don't make filtered"
 coffeeShop2.makeDrink("doubleShot");
 coffeeShop2.makeDrink("frenchPress"); //should alert/console "Sorry, we're all out of beans"
+*/

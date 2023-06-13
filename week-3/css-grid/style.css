@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+}
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: calc(100vh - 40px) 40px;
+
+  grid-template-areas:
+    "f c"
+    "f m";
+  grid-gap: 0px;
+}
+.friends {
+  grid-area: f;
+  background-color: darkorchid;
+  display: grid;
+  font-family: cursive;
+}
+.friends h3 {
+  margin: 10px;
+}
+.friends p {
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  height: fit-content;
+  padding: 5px;
+}
+
+.chatbox {
+  display: grid;
+  grid-area: c;
+  background-color: azure;
+  align-items: start;
+}
+
+.message {
+  grid-area: m;
+  background-color: aquamarine;
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+}
+.buttonSend {
+  display: grid;
+  align-content: center;
+  background-color: darkorchid;
+}
+
+.chatbox div {
+  display: grid;
+  margin: 10px;
+  border-radius: 5px;
+  width: fit-content;
+  padding: 5px;
+  font-family: cursive;
+  grid-template-columns: 4fr 1fr;
+}
+
+.text-container-left {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.text-container-right {
+  display: grid;
+  background-color: rgba(0, 255, 0, 0.5);
+  justify-self: right;
+}
+
+.time {
+  display: grid;
+  font-size: xx-small;
+  justify-content: end;
+  align-items: end;
+}
+.buttonSend {
+  color: white;
+}
