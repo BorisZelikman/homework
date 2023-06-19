@@ -1,0 +1,49 @@
+body {
+  display: grid;
+  justify-items: center;
+}
+h1 {
+  margin-bottom: 0;
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+}
+h5 {
+  color: darkred;
+}
+#form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-areas:
+    ". ."
+    ". ."
+    ". ."
+    ". ."
+    ". ."
+    ". ."
+    "m b";
+
+  background-color: lightseagreen;
+  border: 5px solid seagreen;
+  border-radius: 6px;
+  padding: 20px;
+  grid-column-gap: 20px;
+}
+input {
+  font-size: 20px;
+}
+#name,
+#phone {
+  grid-column: span 2;
+}
+#submit {
+  grid-area: b;
+  margin-top: 20px;
+  background-color: aqua;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 1px 1px 2px rgb(63, 59, 59);
+  border-radius: 5px;
+  justify-self: end;
+}

@@ -1,5 +1,6 @@
 body {
   margin: 0px;
+  overflow: hidden;
 }
 
 .viewboxGrid {
@@ -45,7 +46,9 @@ body {
   padding-right: 10px;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
 }
+
 .abcdGrid {
   display: grid;
   grid-area: a;
@@ -57,6 +60,7 @@ body {
   text-align: center;
   background-color: #f3a683;
 }
+
 .threeColumnGrid {
   display: grid;
   grid-area: t;
@@ -64,10 +68,15 @@ body {
 }
 .threeColumnGrid div {
   padding: 5px;
-  height: 450px;
+  height: 60vh;
   border: 1px solid black;
   align-self: center;
   background-color: #f7d794;
+}
+
+#picture {
+  align-self: center;
+  width: 100%;
 }
 .info {
   display: grid;
@@ -77,6 +86,7 @@ body {
   align-self: self-end;
   padding: 5px;
 }
+
 .calc {
   display: grid;
   grid-area: c;
@@ -111,10 +121,4 @@ body {
 }
 .span2 {
   grid-column: span 2;
-}
-
-#picture {
-  align-self: center;
-  width: 100%;
-  font-family: ;
 }
