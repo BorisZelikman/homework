@@ -1,4 +1,4 @@
-let users = [];
+/*let users = [];
 
 const getData = function (callback) {
   setTimeout(function () {
@@ -8,23 +8,25 @@ const getData = function (callback) {
   }, 3000);
 };
 
-// const displayData = function () {
-//   console.log("Going to display users");
-//   for (user of users) {
-//     console.log(user.name);
-//   }
-// };
+const displayData = function () {
+  console.log("Going to display users");
+  for (user of users) {
+    console.log(user.name);
+  }
+};
 
-//getData(displayData);
+getData(displayData);
 
-//setInterval(() => console.log(new Date()), 1000);
+setInterval(() => console.log(new Date()), 1000);
+
 const square = (number) => console.log(number * number);
 square(4);
 
 const getFormalTitle = (title, name) => title + " " + name;
 formalTitle = getFormalTitle("Madamme", "Lellouche");
 console.log(formalTitle); //returns "Maddame Lellouche"
-
+*/
+// Exercise 1
 const push = function () {
   console.log("pushing it!");
 };
@@ -32,8 +34,7 @@ const push = function () {
 const pull = function () {
   console.log("pulling it!");
 };
-/*
-// Exercise 1
+
 const pushPull = (callback) => callback();
 
 pushPull(push); //should print "pushing it!"
@@ -52,13 +53,14 @@ getTime(returnTime);
 
 
 // Exercise 3
-
 const alert = function (data) {
   console.log("alert-" + data);
 };
+
 const logData = function (data) {
   console.log("logData-" + data);
 };
+
 const displayData = function (alertDataFunc, logDataFunc, data) {
   alertDataFunc(data);
   logDataFunc(data);
