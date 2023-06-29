@@ -109,6 +109,10 @@ body {
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
   justify-content: center;
+  cursor: pointer;
+}
+.calc > button:hover {
+  background-color: #535c68;
 }
 .span4 {
   grid-column: span 4;

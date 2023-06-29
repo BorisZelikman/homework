@@ -42,11 +42,6 @@ const SongsManager = function () {
     let newValue = songUrl.replace("https://www.youtube.com/watch?v=", "");
     _songs[songName] = newValue;
   };
-  const addSongA = (songName, songUrl) =>
-    (_songs[songName] = songUrl.replace(
-      "https://www.youtube.com/watch?v=",
-      ""
-    ));
   const getSong = function (songKey) {
     console.log("https://www.youtube.com/watch?v=" + _songs[songKey]);
   };
