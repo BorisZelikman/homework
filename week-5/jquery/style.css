@@ -42,3 +42,24 @@
 .yellow {
   color: yellow;
 }
+
+body {
+  background: #ecf0f1;
+}
+
+#colors {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.picker {
+  padding: 10px;
+  margin: 10px;
+  width: 120px;
+  border-radius: 5px;
+  font-family: "Source Sans Pro", sans-serif; /*You'll have to import this from Google Fonts*/
+  box-shadow: 1px 1px 3px black;
+  display: inline-block;
+  font-weight: bold;
+  cursor: pointer;
+}
