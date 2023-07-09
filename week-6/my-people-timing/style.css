@@ -1,0 +1,18 @@
+.person {
+  display: inline-block;
+  width: 25%;
+  height: 100px;
+  margin: 3px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px black;
+  padding: 10px;
+  background-color: lightblue;
+  overflow: hidden;
+}
+.person:hover {
+  background-color: cadetblue;
+}
+#email {
+  color: blue;
+  text-decoration: underline;
+}
